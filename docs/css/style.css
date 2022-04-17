@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
-  background: url('https://wavebg-boilerplate.netlify.app/wavebg.svg');
+  background: url('../../wavebg.svg');
   background-size: 100%;
   background-repeat: no-repeat;
 }
