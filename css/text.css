@@ -6,7 +6,7 @@
 }
 
 h2 {
-	font-size: 14vmin;
+	font-size: 8vmin;
 	position: absolute;
 }
 
@@ -24,15 +24,6 @@ h2 {
     padding: 10px;
 	animation: wave 3s ease-in-out infinite;
 }
-
-.two {
-	transform: translateY(0.8em);
-}
-
-.three {
-	transform: translateY(-0.8em);
-}
-
 @keyframes wave {
 	0%, 100% {
 		clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
