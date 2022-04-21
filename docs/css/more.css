@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+
+.img span {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+.img span:first-child, .img span:nth-child(2) {
+  top: 0;
+}
+.img span:first-child, .img span:nth-child(3) {
+  left: 0;
+}
+.img span:nth-child(2), .img span:nth-child(4) {
+  right: 0;
+}
+.img span:nth-child(3), .img span:nth-child(4) {
+  bottom: 0;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  width: 75vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#grid > a {
+  position: relative;
+  transform-style: preserve-3d;
+}
+#grid > a:hover {
+  cursor: pointer;
+}
+#grid > a:hover .title:after {
+  background-position: 0% 100%;
+}
+#grid > a .img {
+  width: 100%;
+  position: relative;
+}
+#grid > a .img > span {
+  z-index: 2;
+}
+#grid > a .img > span ~ img {
+  z-index: 1;
+  transition: 0.2s;
+  width: 100%;
+}
+#grid > a .img > span:first-child:hover ~ img {
+  transform: perspective(600px) rotateX(10deg) rotateY(-10deg);
+}
+#grid > a .img > span:nth-child(2):hover ~ img {
+  transform: perspective(600px) rotateX(10deg) rotateY(10deg);
+}
+#grid > a .img > span:nth-child(3):hover ~ img {
+  transform: perspective(600px) rotateX(-10deg) rotateY(-10deg);
+}
+#grid > a .img > span:nth-child(4):hover ~ img {
+  transform: perspective(600px) rotateX(-10deg) rotateY(10deg);
+}
+#grid > a .title {
+  font-weight: 400;
+  font-size: 2.1rem;
+  position: relative;
+  color: #fff;
+}
+#grid > a .title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2.5px;
+  left: 0;
+  background-image: linear-gradient(to right, #7e04e1 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 99%;
+  transition: 0.2s;
+}
+#grid > a .description {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  display: block;
+  color: #fff;
+}

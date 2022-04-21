@@ -241,3 +241,15 @@ footer a .fa-lg {
   vertical-align: text-bottom !important;
   margin-right: 0.3125rem;
 }
+
+.w3-code{
+  border-radius: 25px;
+  font-size: 15px;
+  margin-top: 16px!important;
+  margin-bottom: 16px!important;
+  width: 400px;
+  background-color: rgba(182, 182, 182, 0.36);
+  color: #000;
+  padding:  15px 15px 15px 15px;
+  word-wrap: break-word;
+}
