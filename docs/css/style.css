@@ -101,6 +101,7 @@ button:focus, a:focus {
 #alt-navbar .dropdown-menu ul {
   list-style: none;
   padding: 0 0.1875rem;
+  background-color: rgb(191, 75, 237);
 }
 #alt-navbar .dropdown-menu ul li {
   padding: 0.0625rem;
