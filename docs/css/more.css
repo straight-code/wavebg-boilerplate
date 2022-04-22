@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
 
 .img span {
@@ -52,16 +51,16 @@
   width: 100%;
 }
 #grid > a .img > span:first-child:hover ~ img {
-  transform: perspective(600px) rotateX(10deg) rotateY(-10deg);
+  transform: perspective(600px) rotateX(20deg) rotateY(-20deg);
 }
 #grid > a .img > span:nth-child(2):hover ~ img {
-  transform: perspective(600px) rotateX(10deg) rotateY(10deg);
+  transform: perspective(600px) rotateX(20deg) rotateY(20deg);
 }
 #grid > a .img > span:nth-child(3):hover ~ img {
-  transform: perspective(600px) rotateX(-10deg) rotateY(-10deg);
+  transform: perspective(600px) rotateX(-20deg) rotateY(-20deg);
 }
 #grid > a .img > span:nth-child(4):hover ~ img {
-  transform: perspective(600px) rotateX(-10deg) rotateY(10deg);
+  transform: perspective(600px) rotateX(-20deg) rotateY(20deg);
 }
 #grid > a .title {
   font-weight: 400;
